@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+
+primary {
+  color: #FFCE1A;
+}
+
+secondery {
+  color: #0D0842;
+}
+
+bg {
+  color: #FFFFFF;
+}
+
+favorite {
+  color: #FF5841;
+}
