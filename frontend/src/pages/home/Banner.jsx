@@ -11,7 +11,7 @@ function Banner() {
             <button className='font-bold bg-yellow-300 px-4 py-1 rounded-md'>Subscribe</button>
         </div>
 
-        <div className='md:w-1/2 w-full'>
+        <div className='md:w-1/2 w-full flex items-center md:justify-end'>
             <img src={bannar} alt="" />
         </div>
     </div>
