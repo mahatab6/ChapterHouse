@@ -21,7 +21,7 @@ function TopSellers() {
 
       {/* category filtering */}
       <div>
-        <select className='font-bold rounded-md border px-3 py-1' name="category" id="category">
+        <select className='font-bold rounded-md border px-3 py-1 mb-10' name="category" id="category">
           {
             categorys.map((category, index) => (
               <option className=' font-bold' key={index} value={category}>{category}</option>
