@@ -28,7 +28,7 @@ function TopSellers() {
 
   const filterBooks = selectCategory === "choose a genre" ? books : books.filter(book => book.category === selectCategory.toLowerCase())
 
-  console.log(filterBooks)
+ 
 
   return (
     <div className='py-10'>
@@ -45,7 +45,7 @@ function TopSellers() {
         </select>
       </div>
 
-       <Swiper navigation={true} modules={[Navigation]}
+       <Swiper navigation={true} modules={[Navigation, Pagination]}
         slidesPerView={1}
         spaceBetween={30}
         
@@ -67,7 +67,6 @@ function TopSellers() {
             spaceBetween: 50,
           },
         }}
-        modules={[Navigation, Pagination]}
         className="mySwiper"
       >
         
