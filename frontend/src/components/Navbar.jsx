@@ -3,6 +3,10 @@ import { Link } from "react-router";
 import { FaRegHeart, FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 
 const Navbar = () => {
+
+  const currentUser = false; 
+
+
   return (
     <header className="max-w-screen-xl mx-auto px-4 py-6">
       <nav className="flex items-center justify-between">
@@ -21,7 +25,10 @@ const Navbar = () => {
 
         {/* right side */}
         <div className="flex items-center gap-3">
-          <FaUser className="size-6" />
+          {
+            currentUser ?  <FaUser className="size-6" /> : <Link to={'/login'}> <FaUser className="size-6" /></Link>
+          }
+         
           <button className="hidden sm:block">
             <FaRegHeart className="size-6" />
           </button>
