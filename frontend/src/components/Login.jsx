@@ -10,7 +10,6 @@ function Login() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data);
-  console.log(errors);
   return (
     <div className="h-[calc(100vh-120px)] flex items-center justify-center ">
       <div className="w-full max-w-sm mx-auto bg-gray-50 shadow-lg px-8 py-6 rounded-2xl">

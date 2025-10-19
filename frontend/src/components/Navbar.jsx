@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router";
 import { FaRegHeart, FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
 
   const currentUser = false; 
 
+  const item = useSelector((state) => state.card.cardItems)
+  console.log(item)
 
   return (
     <header className="max-w-screen-xl mx-auto px-4 py-6">
