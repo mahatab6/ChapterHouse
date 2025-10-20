@@ -8,7 +8,7 @@ const Navbar = () => {
   const currentUser = false; 
 
   const item = useSelector((state) => state.card.cardItems)
-  console.log(item)
+
 
   return (
     <header className="max-w-screen-xl mx-auto px-4 py-6">
@@ -35,9 +35,11 @@ const Navbar = () => {
           <button className="hidden sm:block">
             <FaRegHeart className="size-6" />
           </button>
-          <Link to={'/card'} className=" bg-amber-300 flex items-center py-1 px-6 md:px-8 rounded-md">
+          <Link to={'/cart'} className=" bg-amber-300 gap-1 flex items-center py-1 px-6 md:px-8 rounded-md">
             <FaShoppingCart className="size-6"/>
-            <span>0</span>
+            {
+              item.length > 0 ? <span className="font-bold">{item.length}</span> : <span  className="font-bold">0</span>
+            }
           </Link>
         </div>
       </nav>
