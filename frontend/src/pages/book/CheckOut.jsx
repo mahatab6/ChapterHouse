@@ -16,22 +16,22 @@ function CheckOut() {
   } = useForm();
   const onSubmit = (data) => {
     const newOrder = {
-        name: data.full_name,
-        email: data.email,
-        address:{
-            city: data.city,
-            country: data.country,
-            state: data.state,
-            zipcode: data.zipcode
-        },
-        phone: data.phone,
-        productIds: cardItem.map((item) => item?._id),
-        totalPrice: totalPrice
+      name: data.full_name,
+      email: data.email,
+      address: {
+        city: data.city,
+        country: data.country,
+        state: data.state,
+        zipcode: data.zipcode
+      },
+      phone: data.phone,
+      productIds: cardItem.map((item) => item?._id),
+      totalPrice: totalPrice
     }
 
     console.log(newOrder)
   };
-  console.log(errors);
+
 
   return (
     <section>
