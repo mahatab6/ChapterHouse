@@ -1,6 +1,13 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Environment variables
 .env
+
+# Firebase/Service keys
 serviceAccountKey.json
 serviceKeyConverter.js
+
+# Vercel configs
+.vercel/
 vercel.json
-.vercel
